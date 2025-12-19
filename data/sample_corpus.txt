@@ -1,0 +1,366 @@
+hi
+hello
+hey
+hey there
+hi how are you
+hello how are you doing
+hey how is it going
+i am fine
+i am doing well
+i am okay
+i am good thanks
+what about you
+how about you
+i am also fine
+i am doing great today
+what are you doing
+what are you up to
+what are you working on
+i am working on a project
+i am studying right now
+i am learning something new
+i am practicing coding
+i am preparing for an exam
+did you eat
+have you eaten
+yes i ate already
+no not yet
+i will eat later
+i am feeling hungry
+let us eat together
+what do you want to eat
+where are you
+where are you now
+i am at home
+i am in college
+i am at the office
+i am on the way
+i will reach soon
+i am coming now
+are you free
+are you busy
+i am free now
+i am a bit busy
+i will call you later
+let me know when you are free
+can we talk now
+let us talk later
+what is your plan
+do you have any plans
+i do not have any plans
+i am planning to study
+i am planning to sleep
+i am planning to go out
+i am planning to meet friends
+did you understand
+do you understand
+yes i understand
+no i did not understand
+please explain again
+can you explain this
+this makes sense now
+thanks for explaining
+what is happening
+what happened
+nothing much
+not much is happening
+everything is fine
+something happened today
+it was a long day
+it was a busy day
+are you okay
+is everything okay
+yes i am okay
+i am not feeling well
+i am feeling tired
+i need some rest
+i will sleep early today
+good morning
+good afternoon
+good evening
+good night
+sweet dreams
+have a nice day
+take care
+see you later
+thank you
+thanks a lot
+thanks for helping
+thank you so much
+i really appreciate it
+no problem
+you are welcome
+anytime
+sorry
+i am sorry
+sorry for the delay
+sorry about that
+it is okay
+no worries
+do not worry about it
+what do you think
+what is your opinion
+i think it is good
+i think it will work
+i am not sure
+maybe you are right
+that sounds good
+that sounds interesting
+can you help me
+i need some help
+please help me
+sure i can help
+yes i will help you
+let me check
+i will get back to you
+did you finish
+have you finished
+yes i finished it
+not yet
+i am still working on it
+almost done
+i will finish soon
+what time is it
+what is the time now
+it is getting late
+it is already night
+it is morning now
+let us sleep now
+do you like it
+do you like this
+yes i like it
+no i do not like it
+it looks good
+it looks nice
+it looks interesting
+are you coming
+will you come
+yes i am coming
+no i cannot come
+i will try to come
+maybe next time
+let us see
+how was your day
+how was your experience
+it was good
+it was great
+it was okay
+it was stressful
+it was exhausting
+but it was worth it
+what should we do
+what do you want to do
+let us study
+let us watch a movie
+let us go out
+let us relax
+let us decide later
+this is important
+this is urgent
+this can wait
+we can discuss later
+we should talk about this
+we will fix this
+i agree with you
+i disagree with you
+you are right
+you are wrong
+that makes sense
+i do not think so
+everything will be fine
+do not worry
+trust the process
+things will work out
+just be patient
+stay positive
+Large sample text data for predictive text AI using n-gram models
+# Short sentences
+hello how are you
+i am fine
+what is your name
+where are you going
+please wait for me
+i will be back
+can you help me
+i love programming
+she is reading
+he is sleeping
+they are playing
+we are watching
+open the window
+close the door
+turn off the light
+i need water
+can you call me
+i am hungry
+i am tired
+let’s go outside
+# Medium sentences
+the weather today is very pleasant
+i am going to the market tomorrow
+she likes reading novels in the evening
+he enjoys playing football with friends
+they are planning a trip next weekend
+please pass me the salt from the kitchen
+i will call you after finishing my work
+we should meet for coffee this weekend
+he is learning artificial intelligence and machine learning
+she decided to adopt a puppy from the animal shelter
+i am planning to start a new hobby next month
+we need to finish the project report before the deadline
+reading books every day improves vocabulary and imagination
+traveling to new places is always exciting
+he was very excited to see the results of the experiment
+she loves painting because it helps her relax and focus
+can you explain this topic again for me
+i will attend the meeting scheduled for tomorrow morning
+the company is launching a new product next week
+learning new programming languages can be fun and challenging
+# Long sentences
+the sun rises in the east and sets in the west while giving beautiful colors to the sky
+i enjoy spending time in the park reading books and observing people walking by
+she was so happy to receive the gift that she had been wanting for a long time
+he decided to take a break from work and go on a short vacation to the mountains
+they are planning a surprise party for their friend’s birthday next Saturday evening
+i like to watch movies with friends on weekends and discuss the story afterward
+the train was late due to heavy rainfall but eventually reached the station safely
+she spent hours cooking a delicious meal for her family and friends
+he is working on a machine learning project that predicts stock prices accurately
+we went to the beach and enjoyed swimming, building sandcastles, and collecting shells
+i am learning new skills in programming and data science to improve my career opportunities
+reading historical novels helps to understand the culture and lifestyle of the past centuries
+the teacher explained the complex mathematical problem in a very simple and understandable way
+during the festival, people decorate their homes with lights, flowers, and colorful patterns
+he bought a new laptop with high performance to complete his software development tasks efficiently
+i like to start my mornings with meditation, exercise, and a healthy breakfast
+she enjoys painting landscapes and portraits in her free time to relax and be creative
+we spent the entire day exploring the city, visiting museums, and trying local cuisines
+he felt proud after completing the marathon despite the difficult weather conditions
+she carefully planned the road trip, including stops at historical sites and scenic locations
+# Conversational phrases
+how are you doing today
+what are you up to
+i am feeling great
+can you tell me more about it
+let’s go out for dinner tonight
+do you like listening to music
+i don’t understand this part
+please explain it again
+what do you think about this idea
+that sounds like a wonderful plan
+how was your weekend
+i will see you tomorrow
+did you finish your homework
+i need some help with this problem
+can we meet later today
+what is the plan for today
+i enjoyed the movie a lot
+have you seen the latest episode
+what are your thoughts on this topic
+i am looking forward to the event
+# Miscellaneous statements
+the cat is sleeping on the sofa
+he bought a new bicycle yesterday
+she cooked a delicious meal for the family
+i need to buy groceries for the week
+we watched an interesting documentary last night
+it is time to go to bed
+he is learning to play the guitar
+the sun sets beautifully behind the mountains
+she wears a red dress on special occasions
+the children are playing in the garden
+please turn on the fan
+i need to finish my assignment
+we visited the zoo and saw many animals
+he enjoys jogging in the morning before work
+she planted flowers in the backyard
+the coffee is hot and ready to drink
+he repaired the broken chair in the living room
+we stayed at a cozy hotel during our trip
+the teacher asked a difficult question in class
+she went shopping and bought new clothes and shoes
+
+# Repetitive sentences to help n-grams
+i am going to the park
+i am going to the market
+i am going to the library
+i am going to the gym
+i am going to the office
+i am going to the cafe
+i am going to the school
+i am going to the station
+i am going to the bank
+i am going to the restaurant
+he is reading a book
+he is reading the newspaper
+he is reading a magazine
+he is reading a novel
+he is reading an article
+she is cooking dinner
+she is cooking breakfast
+she is cooking lunch
+she is cooking a snack
+she is cooking a cake
+they are playing football
+they are playing basketball
+they are playing cricket
+they are playing tennis
+they are playing volleyball
+we are watching a movie
+we are watching a match
+we are watching a documentary
+we are watching a play
+we are watching a concert
+# High-level sentences for predictive text AI
+
+The rapid advancement of artificial intelligence is transforming industries by enabling automation and optimizing decision-making processes in unprecedented ways.  
+Despite facing numerous logistical challenges, the research team successfully completed the international study, yielding valuable insights into climate change patterns.  
+The intricate interplay between cultural heritage and modern technology often dictates the evolution of urban landscapes in rapidly growing metropolitan areas.  
+She meticulously analyzed the financial report, identifying subtle trends that could influence strategic investment decisions over the next decade.  
+The novel explored the philosophical ramifications of human consciousness, questioning the nature of identity and free will in a technologically driven society.  
+In order to mitigate environmental degradation, policymakers must implement sustainable development practices that balance economic growth with ecological preservation.  
+The conference highlighted emerging trends in quantum computing, demonstrating its potential to revolutionize data processing and cryptography.  
+By synthesizing data from multiple sources, the team was able to create a predictive model with remarkable accuracy and practical applicability.  
+The architect designed the structure to maximize natural light and airflow, seamlessly integrating aesthetics with functionality.  
+As global connectivity increases, the ethical implications of data privacy and cybersecurity become increasingly complex and urgent.  
+The historical manuscript provided unprecedented insights into the social, political, and economic conditions of the 18th century.  
+Through rigorous experimentation, the scientists discovered a correlation between neural plasticity and cognitive resilience in aging populations.  
+The economic analysis underscored the importance of diversification in mitigating the risks associated with volatile markets.  
+The interdisciplinary project combined principles of psychology, computer science, and linguistics to enhance human-computer interaction.  
+By leveraging machine learning algorithms, the team developed a recommendation system that dynamically adapts to user preferences.  
+The philosophical debate centered on the tension between individual autonomy and collective societal responsibilities.  
+Her eloquent presentation captivated the audience, blending empirical evidence with compelling storytelling and visual aids.  
+The strategic implementation of renewable energy technologies has the potential to significantly reduce carbon emissions and foster sustainable growth.  
+In the realm of literature, the author skillfully juxtaposed classical motifs with contemporary themes to explore the human condition.  
+The medical breakthrough, which involved targeted gene therapy, has opened new avenues for treating previously incurable hereditary diseases.  
+The negotiation process required careful diplomacy, balancing competing interests to achieve a mutually beneficial resolution.  
+Innovative urban planning initiatives aim to create inclusive public spaces that promote social cohesion and community engagement.  
+The software development team adopted agile methodologies to enhance productivity, collaboration, and responsiveness to client feedback.  
+Advances in biotechnology are reshaping agriculture, enabling the creation of crops that are more resilient to climate change.  
+The documentary provided a nuanced examination of geopolitical tensions, highlighting the historical context behind contemporary conflicts.  
+In order to foster creativity and critical thinking, educational institutions are increasingly emphasizing interdisciplinary learning experiences.  
+The intricate molecular mechanisms underlying cellular communication have profound implications for the development of targeted pharmaceuticals.  
+By integrating augmented reality into the training program, employees were able to acquire complex skills more efficiently and safely.  
+The artistic installation challenged conventional perspectives, encouraging viewers to reconsider the boundaries between reality and imagination.  
+Through careful analysis of historical data, the economist predicted potential market fluctuations and advised on risk mitigation strategies.  
+The literary critique examined the interplay of narrative voice, symbolism, and thematic development in the classic novel.  
+Emerging technologies in renewable energy storage are crucial for enhancing grid stability and meeting increasing electricity demands.  
+The cross-cultural study revealed significant variations in social norms, communication styles, and behavioral expectations.  
+By fostering collaboration between academia and industry, the research initiative accelerated the translation of scientific discoveries into practical applications.  
+The urban redevelopment project prioritized environmental sustainability, pedestrian accessibility, and aesthetic integration with existing architecture.  
+The clinical trial demonstrated the efficacy of the new therapeutic intervention, while also monitoring potential adverse effects on patients.  
+In the context of international relations, effective diplomacy requires a nuanced understanding of historical grievances and cultural sensitivities.  
+The algorithm was optimized to process vast datasets efficiently, providing real-time insights for decision-making in complex systems.  
+The theatrical performance combined innovative staging techniques with traditional storytelling to create a deeply immersive experience.  
+The sociological study examined the impact of digital media on interpersonal relationships and community engagement.  
+The public policy initiative aimed to address income inequality through targeted social programs and equitable resource distribution.  
+The experiment provided compelling evidence that environmental factors significantly influence cognitive development in early childhood.  
+The entrepreneur successfully launched a disruptive startup that leveraged emerging technologies to redefine market dynamics.  
+The narrative explored ethical dilemmas in scientific research, highlighting the tension between innovation and societal responsibility.  
+By utilizing advanced statistical modeling, the analysts identified patterns that were previously obscured by noise in the data.  
+The educational seminar emphasized critical thinking, problem-solving, and collaborative learning as essential skills for the modern workforce.  
+The historical archive preserved invaluable documents that shed light on the cultural and political evolution of the region.  
+The interdisciplinary conference facilitated meaningful dialogue between experts in neuroscience, artificial intelligence, and philosophy.  
+The architectural blueprint incorporated adaptive features to optimize energy efficiency, structural integrity, and aesthetic appeal.  
+The literary anthology celebrated diverse voices, showcasing a wide range of perspectives, styles, and cultural narratives.  
+The strategic report outlined actionable recommendations to improve organizational efficiency, stakeholder engagement, and long-term growth.  

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Predictive Text System – Demo</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 95%;
+      background: #ffffffcc;
+      backdrop-filter: blur(15px);
+      padding: 2.5rem 3rem;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(12px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      font-size: 32px;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1.2px;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      text-align: center;
+      color: #444;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .input-area {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 0.9rem 1.2rem;
+      border-radius: 15px;
+      border: 2px solid #d1d9e6;
+      background: #f9faff;
+      font-size: 16px;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    input[type="text"]:focus {
+      border-color: #ff6a00;
+      background: #fff;
+      outline: none;
+      box-shadow: 0 0 15px rgba(255,106,0,0.4);
+    }
+
+    button {
+      padding: 0.85rem 1.5rem;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      border: none;
+      color: white;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    button:hover {
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #ee0979, #ff6a00);
+    }
+
+    /* Emphasized Section Titles */
+    .section-title {
+      font-size: 22px;
+      margin-top: 2rem;
+      margin-bottom: 0.7rem;
+      color: #ff6a00;
+      font-weight: 700;
+      border-left: 8px solid #ee0979;
+      padding-left: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .suggestions-box {
+      background: linear-gradient(120deg, #f0f8ff, #e6f7ff);
+      padding: 1rem;
+      border-radius: 15px;
+      min-height: 50px;
+      border: 1px solid #d0e4ff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      transition: 0.3s;
+    }
+
+    /* Suggestion emphasis */
+    .suggestion {
+      display: inline-block;
+      padding: 0.45rem 1rem;
+      background: linear-gradient(120deg, #ff9a9e, #fecfef);
+      color: #fff;
+      border-radius: 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    /* Top suggestion emphasis on hover */
+    .suggestion:hover {
+      background: linear-gradient(120deg, #ee0979, #ff6a00);
+      transform: translateY(-3px) scale(1.1);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Responsive adjustments */
+    @media(max-width: 600px){
+      input[type="text"] { width: 65%; }
+      button { padding: 0.7rem 1.2rem; font-size: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Predictive Text Input System</h2>
+    <p>Type a phrase and click <strong>Suggest</strong> to see word predictions.</p>
+
+    <div class="input-area">
+      <input id="context" type="text" placeholder="Type a phrase here...">
+      <button onclick="getSuggestions()">Suggest</button>
+    </div>
+
+    <div class="section-title">🔹 N-gram Model Suggestions</div>
+    <div id="ngram_sug" class="suggestions-box"></div>
+
+    <div class="section-title">🔹 LSTM Model Suggestions</div>
+    <div id="lstm_sug" class="suggestions-box"></div>
+  </div>
+
+<script>
+async function getSuggestions(){
+  const ctx = document.getElementById("context").value;
+  if(!ctx.trim()) return;
+
+  // N-gram call
+  const respN = await fetch("/predict/ngram", {
+    method:"POST",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify({context: ctx})
+  });
+  const ndata = await respN.json();
+  const ndiv = document.getElementById("ngram_sug");
+  ndiv.innerHTML = ndata.map(x => 
+    `<span class="suggestion" onclick="appendWord('${x.word}')">${x.word} (${(x.prob||0).toFixed(2)})</span>`
+  ).join(' ');
+
+  // LSTM call
+  const respL = await fetch("/predict/lstm", {
+    method:"POST",
+    headers: {"Content-Type":"application/json"},
+    body: JSON.stringify({context: ctx})
+  });
+  const ldata = await respL.json();
+  const ldiv = document.getElementById("lstm_sug");
+  ldiv.innerHTML = ldata.map(x => 
+    `<span class="suggestion" onclick="appendWord('${x.word}')">${x.word} (${(x.prob||0).toFixed(2)})</span>`
+  ).join(' ');
+}
+
+function appendWord(w){
+  const inp = document.getElementById("context");
+  inp.value = (inp.value + " " + w).trim();
+  getSuggestions();
+}
+</script>
+
+</body>
+</html>
